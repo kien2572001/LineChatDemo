@@ -1,0 +1,25 @@
+.message-content-container{
+  
+  width: 100%;
+  height: 100vh;
+  border-left: 1px solid #e6e6e6;
+  border-top:  1px solid #e6e6e6;
+  background-color: white;
+
+  .message-content-header{
+    width: 100%;
+    display: flex;
+    padding: 20px 20px;
+    justify-content: space-between;
+
+    .message-content-header-name{
+      
+    }
+    .message-content-header-btn-group{
+      font-size: 18px;
+      .message-content-header-btn{
+        margin-left: 15px;
+      }
+    }
+  }
+}

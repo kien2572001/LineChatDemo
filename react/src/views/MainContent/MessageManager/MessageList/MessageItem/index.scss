@@ -1,0 +1,50 @@
+.list-group-item{
+  height: 70px;
+  display: flex;
+  padding: 10px 10px;
+  cursor: pointer;
+
+  .message-logo{
+    .message-logo__img{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+  }
+
+  .message-content{
+    display: flex;
+    flex : 1;
+    justify-content: space-between;
+
+    .message-content__info{
+      display: flex;
+      flex-direction: column;
+
+      .message-content__organization{
+        font-weight: 650;
+      }
+
+      .message-content__from{
+        font-weight: 650;
+      }
+    }
+
+    .message-content__subject{
+      align-self: center;
+    }
+
+    .message-content__status{
+      display: flex;
+      flex-direction: column;
+      .message-content__status--icon{
+
+      }
+
+      .message-content__status--time{
+
+      }
+    }
+  }
+}
