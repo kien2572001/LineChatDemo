@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8a77aba1245e910e36d745e1d4ca113f",
+    "content-hash": "d00367ffd6e8c1e3d81d0fc643c0ce5a",
     "packages": [
         {
             "name": "brick/math",
@@ -1759,31 +1759,30 @@
         },
         {
             "name": "linecorp/line-bot-sdk",
-            "version": "9.3.0",
+            "version": "7.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/line/line-bot-sdk-php.git",
-                "reference": "2c0e9cbeea6cff4e1b7688788e61f5024055b088"
+                "reference": "e141f29cd7b9f27615d11f69e329f2b83ed70654"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/line/line-bot-sdk-php/zipball/2c0e9cbeea6cff4e1b7688788e61f5024055b088",
-                "reference": "2c0e9cbeea6cff4e1b7688788e61f5024055b088",
+                "url": "https://api.github.com/repos/line/line-bot-sdk-php/zipball/e141f29cd7b9f27615d11f69e329f2b83ed70654",
+                "reference": "e141f29cd7b9f27615d11f69e329f2b83ed70654",
                 "shasum": ""
             },
             "require": {
-                "guzzlehttp/guzzle": "^7.3",
-                "guzzlehttp/psr7": "^1.7 || ^2.0",
-                "php": ">=8.1"
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-sockets": "*",
+                "php": ">=7.2"
             },
             "require-dev": {
-                "guzzlehttp/guzzle": "^7.3",
-                "guzzlehttp/psr7": "^1.7 || ^2.0",
                 "orchestra/testbench": "*",
                 "phpmd/phpmd": "2.13.0",
-                "phpstan/phpstan": "^1.10",
-                "phpunit/phpunit": "^10.2",
-                "squizlabs/php_codesniffer": "3.7.2"
+                "phpstan/phpstan": "1.8.9",
+                "phpunit/phpunit": "^7||^8||^9",
+                "squizlabs/php_codesniffer": "3.7.1"
             },
             "type": "library",
             "extra": {
@@ -1792,27 +1791,13 @@
                         "LINE\\Laravel\\LINEBotServiceProvider"
                     ],
                     "aliases": {
-                        "LINEChannelAccessTokenApi": "LINE\\Laravel\\Facades\\LINEChannelAccessTokenApi",
-                        "LINEInsightApi": "LINE\\Laravel\\Facades\\LINEInsightApi",
-                        "LINELiffApi": "LINE\\Laravel\\Facades\\LINELiffApi",
-                        "LINEManageAudienceApi": "LINE\\Laravel\\Facades\\LINEManageAudienceApi",
-                        "LINEManageAudienceBlobApi": "LINE\\Laravel\\Facades\\LINEManageAudienceBlobApi",
-                        "LINEMessagingApi": "LINE\\Laravel\\Facades\\LINEMessagingApi",
-                        "LINEMessagingBlobApi": "LINE\\Laravel\\Facades\\LINEMessagingBlobApi"
+                        "LINEBot": "LINE\\Laravel\\Facade\\LINEBot"
                     }
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "LINE\\Parser\\": "src/parser/lib/",
-                    "LINE\\Laravel\\": "src/laravel/lib/",
-                    "LINE\\Webhook\\": "src/webhook/lib/",
-                    "LINE\\Constants\\": "src/constants/",
-                    "LINE\\Clients\\Liff\\": "src/clients/liff/lib/",
-                    "LINE\\Clients\\Insight\\": "src/clients/insight/lib/",
-                    "LINE\\Clients\\MessagingApi\\": "src/clients/messaging-api/lib/",
-                    "LINE\\Clients\\ManageAudience\\": "src/clients/manage-audience/lib/",
-                    "LINE\\Clients\\ChannelAccessToken\\": "src/clients/channel-access-token/lib/"
+                    "LINE\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1850,9 +1835,9 @@
             ],
             "support": {
                 "issues": "https://github.com/line/line-bot-sdk-php/issues",
-                "source": "https://github.com/line/line-bot-sdk-php/tree/9.3.0"
+                "source": "https://github.com/line/line-bot-sdk-php/tree/7.6.1"
             },
-            "time": "2023-09-15T02:25:22+00:00"
+            "time": "2022-10-17T08:29:38+00:00"
         },
         {
             "name": "monolog/monolog",
